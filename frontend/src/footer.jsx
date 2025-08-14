@@ -16,9 +16,9 @@ export default function Footer({ company = "Made by", names = ["Rishi Shinde", "
         justifyContent: 'space-between'
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap', justifyContent: 'center' }}>
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          {/* <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 2l3 7h7l-5.5 4.5L20 21l-8-5-8 5 1.5-7.5L0 9h7l3-7z" />
-          </svg>
+          </svg> */}
           <div style={{ textAlign: 'center' }}>
             <p style={{ margin: 0, fontWeight: 'bold' }}>{company}</p>
             <p style={{ margin: 0, fontSize: '0.9em', color: '#555' }}>{names.join(' • ')}</p>
