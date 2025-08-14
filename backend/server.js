@@ -9,7 +9,14 @@ import timetableRoutes from './routes/timetable.js';
 const app = express();
 app.use(express.json());
 // app.use(cors({ origin: process.env.CORS_ORIGIN?.split(',') || '*', credentials: true }));
-app.use(cors({ origin: "https://time-table-sgi.vercel.app/"?.split(',') || '*', credentials: true }));
+
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://time-table-sgi.vercel.app"
+  ],
+  credentials: true
+}));
 
 
 mongoose.connect(process.env.MONGODB_URI, { dbName: 'mern_timetable' })
