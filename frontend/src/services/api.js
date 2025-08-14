@@ -1,7 +1,6 @@
 import axios from 'axios';
 // const api = axios.create({ baseURL: 'http://localhost:4000/api' });
-const api = axios.create({ baseURL: 'https://timetable-sgi-1.onrender.com' });
-
+const api = axios.create({ baseURL: 'https://timetable-sgi-1.onrender.com/api' });
 export function setToken(t){ api.defaults.headers.common['Authorization'] = `Bearer ${t}`; }
 export const Auth = { login: (email,password)=>api.post('/auth/login',{email,password}).then(r=>r.data) };
 export const ConfigApi = {
