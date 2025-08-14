@@ -26,7 +26,7 @@ export default function App() {
 
         {/* Navigation */}
         <nav className={`nav-links ${menuOpen ? 'active' : ''}`}>
-          <Link to="/admin/panel" onClick={() => setMenuOpen(false)}>View</Link>
+          <Link to="/" onClick={() => setMenuOpen(false)}>View</Link>
           <Link to="/admin" onClick={() => setMenuOpen(false)}>Admin</Link>
         </nav>
       </header>
