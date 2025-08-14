@@ -4,6 +4,7 @@ import AdminLogin from './components/AdminLogin.jsx';
 import AdminPanel from './components/AdminPanel.jsx';
 import TimetableTable from './components/TimetableTable.jsx';
 import "./index.css";
+import Footer from './footer.jsx';
 
 export default function App() {
   const [token, setToken] = useState(localStorage.getItem('jwt') || '');
@@ -43,6 +44,8 @@ export default function App() {
         <Route path="/admin/panel" element={<AdminPanel />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+
+      <Footer />
     </div>
   );
 }
