@@ -1,0 +1,98 @@
+/* Timetable container - responsive scroll */
+.timetable-container {
+  overflow-x: auto;
+  padding: 16px;
+  background: linear-gradient(135deg, #f9fbfdac, #f9f9f9d3); /* Soft white to light blue */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e0e7ff; /* Subtle border */
+}
+
+
+/* Table styling */
+.timetable-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header cells */
+.timetable-table th {
+  background: linear-gradient(135deg, #4e73df, #224abe);
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 15px;
+  position: sticky;
+  top: 0; /* Sticky header when scrolling */
+  z-index: 1;
+}
+
+/* Table cells */
+.timetable-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+/* Hover effect for rows */
+.timetable-table tr:hover td {
+  background-color: #f1f5ff;
+}
+
+/* Text styles */
+.font-semibold {
+  font-weight: 600;
+  color: black;
+}
+
+.text-xs {
+  font-size: 12px;
+  color: #323131;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.text-gray-500 {
+  color: #777;
+}
+
+span{
+  color: rgb(255, 0, 0);
+  font-weight: 400;
+}
+/* No timetable message */
+.no-timetable {
+  padding: 16px;
+  font-size: 14px;
+  color: #555;
+  background: #fce4ec;
+  border: 1px solid #f8bbd0;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .timetable-table th,
+  .timetable-table td {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timetable-container {
+    padding: 8px;
+  }
+  
+  .timetable-table th,
+  .timetable-table td {
+    font-size: 11px;
+    padding: 5px;
+  }
+}

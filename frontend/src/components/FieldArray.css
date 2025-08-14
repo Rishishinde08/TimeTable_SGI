@@ -1,0 +1,48 @@
+.field-array {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .field-item {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    align-items: end;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+  }
+  
+  .field-item input {
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .field-item button {
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .field-item button:hover {
+    background-color: #eee;
+  }
+  
+  .add-button {
+    padding: 8px 12px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    width: fit-content;
+  }
+  
+  .add-button:hover {
+    background-color: #eee;
+  }
+  
